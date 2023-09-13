@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ApplicationCore.Entities
 {
-    internal class Brand
+    public class Brand : BaseEntity
     {
+        public string Name { get; set; } = null!;
     }
 }
