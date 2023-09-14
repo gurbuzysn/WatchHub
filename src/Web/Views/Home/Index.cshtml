@@ -23,7 +23,7 @@
     @foreach (var item in await productRepo.GetAllAsync())
     {
         <li>
-            <img src="~/img/product/@item.PictureUri" width="32" />
+            <img src="~/img/product/@item.PictureUri" alt="" width="32" />
             @item.Name
         </li>
     }
