@@ -22,12 +22,12 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
-product-image >img{
+product-image>img{
     transform: scale(.8);
     transition: all .35s;
 }
 
-product-image >img:hover {
+product-image>img:hover {
     transform: scale(.95);
 }
 
