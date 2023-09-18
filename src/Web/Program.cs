@@ -7,6 +7,7 @@ global using ApplicationCore.Entities;
 global using Web.Interfaces;
 global using Web.Services;
 global using Web.Models;
+using ApplicationCore.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,6 +25,7 @@ builder.Services.AddControllersWithViews();
 
 
 builder.Services.AddScoped(typeof(IRepository<>), typeof(EfRepository<>));  // generic oldugu için typeof kullandýk
+builder.Services.AddScoped<IBasketService, BasketService>();
 builder.Services.AddScoped<IHomeViewModelService, HomeViewModelService>();
 
 var app = builder.Build();
